@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <form action="simpan.php" method="post">
+        <table border="1" cellpadding="10">
+            <tr>
+                <th colspan="2">Form Registrasi</th>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>: <input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>: <input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Kelamin</td>
+                <td>: 
+                    <input type="radio" name="kelamin" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="kelamin" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>: 
+                    <input type="checkbox" name="hobi[]" value="Basket"> Basket
+                    <input type="checkbox" name="hobi[]" value="Masak"> Masak
+                    <input type="checkbox" name="hobi[]" value="Membaca"> Membaca
+                </td>
+            </tr>
+            <tr>
+                <td>Moto</td>
+                <td>: <textarea name="moto" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>Negara</td>
+                <td>: 
+                    <select name="negara">
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Singapura">Singapura</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Simpan">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
